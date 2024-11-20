@@ -1,0 +1,330 @@
+@media (max-width: 575.98px) {
+    .container {
+        width: 100%;
+    }
+
+    .mainmenu {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .menu_row ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu_row ul li a {
+        font-size: 14px;
+    }
+
+    .menu_container .welcome {
+        font-size: 14px;
+    }
+
+    .help_container {
+        width: 100%;
+        left: 0;
+        top: 50px;
+        border-radius: 0;
+        padding: 10px;
+    }
+
+    .help_container h2 {
+        font-size: 14px;
+    }
+
+    .help_container p {
+        font-size: 12px;
+    }
+
+    .text_field h1 {
+        font-size: 17px;
+    }
+
+    .text_field p {
+        font-size: 13px;
+    }
+    img {
+        width: 60px;
+        margin-top: 10px;
+
+      }
+
+    .number_container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .numberinput {
+        max-width: 48%;
+        padding: 8px;
+        font-size: 13px;
+    }
+    .submitbutton {
+        font-size: 9px;
+        padding: 6px 11px;
+    }
+    .reveal {
+        font-size: 12px;
+        padding-left: 16px;
+        padding-right: 16px;
+        height: 37px;
+        margin-top: 10px;
+    }
+
+    .progressbar_container {
+        width: 80%;
+    }
+    .player1container {
+        width: 100%;
+    }
+    .player1container .playername {
+        font-size: 24px;
+    }
+    .taskcounterarea {
+        width: 60%;
+        height: 40px;
+    }
+
+    .taskcounterarea h2{
+        font-size: 24px;
+    }
+    .taskcounterarea span {
+        font-size: 24px;
+    }
+    .inputfield .userinput {
+        width: 90%;
+    }
+    .error {
+        font-size: 20px;
+    }
+    .winner {
+        font-size: 26px;
+    }
+}
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .container {
+        width: 100%;
+    }
+    .mainmenu {
+        height: 50px;
+        background-color: #333333;
+        display: flex;
+        align-items: center;
+    }
+
+    .menu_row ul {
+        gap: 15px;
+    }
+
+    .menu_row ul li a {
+        font-size: 14px;
+    }
+
+    .menu_container .welcome {
+        font-size: 14px;
+    }
+
+    .help_container {
+        width: 100%;
+        left: 0;
+        top: 50px;
+        border-radius: 0;
+        padding: 10px;
+    }
+
+    .help_container h2 {
+        font-size: 14px;
+    }
+
+    .help_container p {
+        font-size: 12px;
+    }
+    .text_field{
+        margin-top: 40px;
+    }
+
+    .text_field h1 {
+        font-size: 21px;
+    }
+
+    .text_field p {
+        font-size: 21px;
+    }
+    img {
+        width: 120px;
+        margin-top: 15px;
+
+      }
+
+    .number_container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .numberinput {
+        max-width: 48%;
+        padding: 8px;
+        font-size: 13px;
+    }
+    .submitbutton {
+        font-size: 9px;
+        padding: 6px 11px;
+    }
+    .reveal {
+        font-size: 12px;
+        padding-left: 16px;
+        padding-right: 16px;
+        height: 37px;
+        margin-top: 10px;
+    }
+
+    .progressbar_container {
+        width: 80%;
+    }
+    .player1container {
+        width: 100%;
+    }
+    .player1container .playername {
+        font-size: 24px;
+    }
+    .taskcounterarea {
+        width: 60%;
+        height: 40px;
+    }
+
+    .taskcounterarea h2{
+        font-size: 24px;
+    }
+    .taskcounterarea span {
+        font-size: 24px;
+    }
+
+    .inputfield .userinput {
+        width: 30%;
+    }
+
+    .error {
+        font-size: 20px;
+    }
+
+    .winner {
+        font-size: 26px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .container {
+        width: 100%;
+    }
+    .mainmenu {
+        height: 50px;
+        background-color: #333333;
+        display: flex;
+        align-items: center;
+    }
+    .menu_row ul {
+        gap: 15px;
+    }
+
+    .menu_row ul li a {
+        font-size: 14px;
+    }
+
+    .menu_container .welcome {
+        font-size: 14px;
+    }
+
+    .help_container {
+        width: 100%;
+        left: 0;
+        top: 50px;
+        border-radius: 0;
+        padding: 10px;
+    }
+
+    .help_container h2 {
+        font-size: 14px;
+    }
+
+    .help_container p {
+        font-size: 12px;
+    }
+    .text_field{
+        margin-top: 40px;
+    }
+
+    .text_field h1 {
+        font-size: 21px;
+    }
+
+    .text_field p {
+        font-size: 21px;
+    }
+    img {
+        width: 120px;
+        margin-top: 15px;
+
+      }
+
+    .number_container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .numberinput {
+        max-width: 48%;
+        padding: 8px;
+        font-size: 13px;
+    }
+    .submitbutton {
+        font-size: 9px;
+        padding: 6px 11px;
+    }
+    .reveal {
+        font-size: 12px;
+        padding-left: 16px;
+        padding-right: 16px;
+        height: 37px;
+        margin-top: 10px;
+    }
+
+    .progressbar_container {
+        width: 80%;
+    }
+    .player1container {
+        width: 100%;
+    }
+    .player1container .playername {
+        font-size: 24px;
+    }
+    .taskcounterarea {
+        width: 60%;
+        height: 40px;
+    }
+
+    .taskcounterarea h2{
+        font-size: 24px;
+    }
+    .taskcounterarea span {
+        font-size: 24px;
+    }
+
+    .inputfield .userinput {
+        width: 30%;
+    }
+
+    .error {
+        font-size: 20px;
+    }
+
+    .winner {
+        font-size: 26px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {   
+    .container{
+        width: 100%;
+    }
+}
+
+

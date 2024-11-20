@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number guessing game</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+<!-- ===================Navbar part start here================== -->
+<nav>
+    <div class="mainmenu">
+        <div class="container">
+            <div class="menu_container">
+                <div class="menu_row">
+                    <ul>
+                        <li> <a href="../index.html" target="_blank">Home</a></li>
+                        <li> <a href="../To dol list/to do list.html" target="=_blank">To do list</a></li>
+                        <li class="helpmenu"> <a class = "helplink" href="#">How to play</a></li>
+                    </ul>
+                </div>
+                <p class="welcome">Welcome user</p>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- ===================Navbar part End here================== -->
+<!-- ==================Help part start here================== -->
+<div class="help_container help">
+    <h2>Help</h2>
+    <p>Welcome to the Number Guessing Game! Enter a number in the input field and press Submit. Player 1 and Player 2 each get three chances to guess the hidden number. The first player to guess correctly wins! Good luck!</p>
+    <button class="close">Close</button>
+</div>
+<!-- ==================Help part start here================== -->
+<!-- ===================Heading part start here================== -->
+<div class="text_container">
+    <div class="container">
+        <div class="maintext">
+            <div class="logo image">
+                <img src="./images/logo.png" alt="logo">
+            </div>
+            <div class="text_field">
+                <h1>Number Guessing Game</h1>
+                <p class="subheading">Two players, three chances—who will guess it first?</p>
+            </div>
+            <div class="image">
+                <img src="./images/man in pc.png" alt="logo">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ===================Heading part End here================== -->
+<!-- ===================Number input area start here================== -->
+<div class="number_input_container">
+    <div class="number_container">
+        <div class="div"></div>
+        <div class="numberinputarea">
+            <input type="number" placeholder="Type no. between 1-100" class="numberinput">
+            <button class="submitbutton">Submit</button>
+        </div>
+        <div class="revealnumber">
+            <button class="reveal">Reveal</button>
+        </div>
+    </div>
+</div>
+<!-- ===================Number input area End here================== -->
+<!-- ===================Progress bar part start here================== -->
+<div class="container">
+    <div class="progressbar_container">
+        <div class="progressbar"></div>
+    </div>
+</div>
+<!-- ====================Progress bar part End here================== -->
+<!-- ===================Player 1 part start here================== -->
+<div class="container">
+    <div class="player1container player1common">
+        <h2 class="playername playername1">Player 1</h2>   
+        <div class="taskcounterarea">
+            <h2><span class=" taskcount1Display taskcount0 taskcount1"></span>/3</h2>
+        </div>
+        <div class="inputfield inputfield1 inputfieldcommon">
+            <input type="number" placeholder="Type number" class="player1input userinput">
+            <button class="reveal guessbutton1">G U E S S</button>
+        </div>
+    </div>
+</div>
+<!-- ===================player 1 part End here================== -->
+ <!-- ===================Player 2 part start here================== -->
+ <div class="container">
+    <div class="player1container player2container">
+        <h2 class=" playername playername2">Player 2</h2>   
+        <div class="taskcounterarea">
+            <h2><span class="taskcount0 taskcoun2 taskcount2Display"></span>/3</h2>
+        </div>
+        <div class="inputfield inputfield2 inputfieldcommon">
+            <input type="number" placeholder="Type number" class="player2input userinput">
+            <button class="reveal guessbutton2">G U E S S</button>
+        </div>
+    </div>
+</div>
+<!-- ===================player 2 part End here================== -->
+ <!-- ==================Winner message============== -->
+  <div class="winner">
+    <h4 class="winner"></h4>
+  </div>
+
+
+<script src="./script/script.js"></script>
+</body>
+</html>

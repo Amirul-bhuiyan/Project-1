@@ -1,0 +1,376 @@
+/* ==============Font family start here============== */
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Molle&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Single+Day&family=Sintony:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* ==============Font family end here============== */
+/* ==============common css start here============== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+a{
+    text-decoration: none;
+}
+ul, li{
+    list-style: none;
+    display: block;
+}
+:root{
+    --font: "Roboto", sans-serif;
+    --bitter: "Sintony", serif;
+}
+.container{
+    width: 1300px;
+    margin: 0 auto;
+}
+/* ==============common css end here============== */
+/* ==============Body css start here============== */
+body{
+    background-color: black;
+    position: relative;
+
+}
+img{
+    width: 442px;
+    position: absolute;
+    left: 1007px;
+    top: -1px;
+}
+/* ==============Body part End here============== */
+/* ==============Heading start here============== */
+.allarea{
+  display:block;
+}
+.heading h1{
+    padding-top: 30px;
+    width: 639px;
+    font-size: 78px;
+    font-family: var(--bitter);
+    color: white;
+    font-weight: 700;
+}
+.heading h2{
+    padding-top: 40px;
+    width: 700px;
+    font-size: 30px;
+    font-family: var(--bitter);
+    color: white;
+    font-weight: 500;
+    padding-bottom: 60px;
+}
+/* ==============Heading end here============== */
+/* ==============Button and Input start here============== */
+.submit{
+    display: flex;
+    justify-content: left;
+    gap: 30px;
+}
+.input {
+    color: white;
+    font-size: 14.4px; 
+    background-color: transparent;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 8px; 
+    padding-right: 8px; 
+    padding-top: 11.2px; 
+    padding-bottom: 11.2px; 
+    border: none;
+    border-bottom: var(--border-height) solid var(--border-before-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input-border {
+    position: absolute;
+    background: var(--border-after-color);
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  }
+  
+  .input:focus {
+    outline: none;
+  }
+  
+  .input:focus + .input-border {
+    width: 100%;
+  }
+  
+  .form-control {
+    position: relative;
+    --width-of-input: 300px;
+  }
+  
+  .input-alt {
+    font-size: 19.2px; 
+    padding-left: 16px; 
+    padding-right: 16px; 
+    padding-top: 12.8px;
+    padding-bottom: 12.8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input-border-alt {
+    height: 3px;
+    background: linear-gradient(90deg, #FF6464 0%, #FFBF59 50%, #47C9FF 100%);
+    transition: width 0.4s cubic-bezier(0.42, 0, 0.58, 1.00);
+  }
+  
+  .input-alt:focus + .input-border-alt {
+    width: 100%;
+  }
+button {
+    position: relative;
+    font-family: var(--font);
+    font-size: 18px;
+    border-radius: 40px; 
+    width: 128px; 
+    height: 48px;
+    z-index: 1;
+    color: white;
+    cursor: pointer;
+    overflow: hidden;
+    border: none;
+  }
+  
+  button .text {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 48px; 
+    border-radius: 40px; 
+    border: none;
+    background: linear-gradient(
+      rgba(255, 255, 255, 0.473),
+      rgba(150, 150, 150, 0.25)
+    );
+    z-index: 1;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  
+  button .blob {
+    position: absolute;
+    z-index: -1;
+    border-radius: 5px; 
+    width: 80px; 
+    height: 48px; 
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+  }
+  
+  button .blob:nth-child(2) {
+    left: 0px;
+    top: 0;
+    background: #ff930f;
+  }
+  
+  button .blob:nth-child(3) {
+    left: 29px; 
+    top: 0;
+    z-index: -1;
+    background: #bf0fff;
+  }
+  
+  button .blob:nth-child(4) {
+    left: 64px; 
+    top: -8px; 
+    background: #ff1b6b;
+  }
+  
+  button .blob:nth-child(5) {
+    left: 69px;
+    top: 25.6px; 
+    background: #0061ff;
+  }
+  
+  button:hover .blob:nth-child(2) {
+    background: #0061ff;
+  }
+  
+  button:hover .blob:nth-child(3) {
+    background: #ff1b6b;
+  }
+  
+  button:hover .blob:nth-child(4) {
+    background: #bf0fff;
+  }
+  
+  button:hover .blob:nth-child(5) {
+    background: #ff930f;
+  }
+  
+  button:hover .blob {
+    transform: scale(1.3);
+  }
+  
+  button:active {
+    border: 2px solid white;
+  }
+/* ==============Button and Input start here end here============== */
+/* ==============Font family start here============== */
+/* ==============Font family start here============== */
+:root{
+  --font: "Roboto", sans-serif;
+  --bitter: "Sintony", serif;
+}
+body{
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+}
+.allarea1{
+display: none;
+}
+.image img{
+  width: 1000px;
+  position: absolute;
+  top: 54px;
+  left: 300px;
+  z-index: 0;
+}
+.text h1{
+  padding-top: 30px;
+  font-size: 60px;
+  font-family: var(--font);
+  color: white;
+  width: 700px;
+  position: relative;
+  z-index: 1;
+}
+.text h2{
+  padding-top: 50px;
+  margin-bottom: 40px;
+  font-size: 30px;
+  font-family: var(--bitter);
+  color: white;
+  width: 500px;
+  position: relative;
+  z-index: 1;
+}
+.cardcontainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.card {
+  position: relative;
+  width: 200px;
+  height: 250px;
+  border-radius: 14px;
+  z-index: 1111;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg{
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 190px;
+  height: 240px;
+  z-index: 2;
+  background:#f0f0f0;
+  backdrop-filter: blur(24px);
+  border-radius: 10px;
+  overflow: hidden;
+  outline: 2px solid white;
+}
+
+.blob {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #ff0000;
+  opacity: 1;
+  filter: blur(12px);
+  animation: blob-bounce 5s infinite ease;
+}
+
+@keyframes blob-bounce {
+  0% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
+
+  25% {
+    transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+  }
+
+  50% {
+    transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+  }
+
+  75% {
+    transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+  }
+
+  100% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
+}
+.card h1{
+  font-size: 30px;
+  color: black;
+  position: relative;
+  z-index: 99;
+  font-family: var(--font);
+}
+.number h1{
+  text-align: center;
+
+}
+.bg1{
+  background-color: #FED403;
+  outline: 2px solid Black;
+}
+.blob1{
+background-color: #FED403;
+}
+.btn{
+  padding: 8px 16px;
+  font-size: 16px;
+  font-family: var(--bitter);
+  color: black;
+  background-color: white;
+  transition: all linear .3s ease-in-out;
+  border: 2px solid white;
+}
+.btn:hover{
+  color: white;
+  background-color: black;
+
+}
+.btnu:hover{
+  background-color: #FED403;
+  color: black;
+  border: 2px solid #FED403;
+}
+.btn:active{
+  transform: scale(1.1);
+}
+.todolistcard{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.numbercard{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+}

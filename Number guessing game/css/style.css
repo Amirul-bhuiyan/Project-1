@@ -1,0 +1,409 @@
+/* ===============Font family start here========== */
+@import url('https://fonts.googleapis.com/css2?family=Molle&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Single+Day&family=Sintony:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Silkscreen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Molle&family=Single+Day&family=Sintony:wght@400;700&display=swap');
+/* ================Font family end here=========== */
+/* ===============Common css start here========== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+ul , li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+:root{
+    --head: "Sintony", serif;
+    --text: "Roboto", sans-serif;
+    --digits: "Silkscreen", sans-serif;
+}
+/* ================Common css end here=========== */
+/* ===============Body part CSS start here========== */
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #FED403;
+    position: relative;
+}
+/* ================Body part CSS end here=========== */
+/* ===============Navbar part strt here ========== */
+.mainmenu{
+    width: 100%;
+    height: 40px;
+    background-color: #333333;
+    display: flex;
+    align-items: center;
+}
+.menu_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu_row ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.menu_row ul li a{
+    font-size: 16px;
+    color: white;
+    font-family: var(--head);
+    transition: all linear .3s ease;
+}
+.menu_row ul li a:hover{
+    color: #FED403;
+}
+.menu_container .welcome{
+    font-size: 16px;
+    color: white;
+    font-family: var(--head);
+}
+/* ===============Navbar part End here============ */
+/* ===============Help part End here============ */
+.help_container{
+    width: 25%;
+    background-color: #333333;
+    margin-top: 10px;
+    position: absolute;
+    top: 40px;
+    left: 172px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.help{
+    display: none;
+}
+.help_container h2{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--head);
+    color: white;
+    text-align: center;
+}
+.help_container p{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--text);
+    color: white;
+    text-align: center;
+ 
+}
+.help_container button{
+    padding: 10px 10px;
+    background-color: #FED403;
+    font-size: 14px;
+    color: black;
+    font-family: var(--text);
+    margin: 0 auto;
+    border-radius: 20px;
+    margin-bottom: 5px;
+
+}
+/* ===============Help part End here============ */
+/* ===============Heading part Start here============ */
+.maintext{
+    display: flex;
+    justify-content: space-between;
+}
+img{
+    width: 100px;
+}
+.text_field h1{
+    margin-top: 10px;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: var(--head);
+    color: black;
+    text-align: center;
+}
+.text_field p{
+    margin-top: 5px;
+    font-size: 20px;
+    font-family: var(--text);
+    color: black;
+    font-weight: 500;
+    text-align: center;
+}
+/* ===============Heading part End here============ */
+/* ===============Number input container css start here============ */
+/* ===============Number input Css start here========== */
+.number_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.numberinputarea{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+/* ==========input field ===========*/
+.numberinput {
+    font-family: "SF Pro";
+    max-width: 300px;
+    padding: 14px;
+    font-size: 16px;
+    font-family: var(--digits);
+    border: 1.5px solid #000;
+    border-radius: 8px;
+    box-shadow: 2.5px 3px 0 #000;
+    outline: none;
+    transition: ease 0.25s;
+  }
+  .numberinput:focus {
+    box-shadow: 5.5px 7px 0 black;
+  }
+/* ==========input field END===========*/
+/* ==========Submit Button part start here  ===========*/
+.submitbutton {
+    appearance: button;
+    background-color: #333333;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 13px 19px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+.submitbutton:after {
+    background-clip: padding-box;
+    background-color: #333333;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+.submitbutton:main, .submitbutton:focus {
+    user-select: auto;
+}
+.submitbutton:hover:not(:disabled) {
+    filter: brightness(1.1);
+}
+.submitbutton:disabled {
+    cursor: auto;
+}
+.submitbutton:active:after {
+    border-width: 0 0 0px;
+}
+.submitbutton:active {
+    padding-bottom: 10px;
+}
+/* ==========Submit Button part End here  =============*/
+/* ===============Reveal button part Css Start here here========== */
+.reveal {
+    align-items: center;
+    appearance: none;
+    background-color: #EEF2FF;
+    border-radius: 8px;
+    border-width: 2px;
+    border-color: black;
+    box-shadow: rgba(83, 109, 254, 0.2) 0 2px 4px, rgba(83, 109, 254, 0.15) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: black;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: var(--digits);
+    height: 56px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 24px;
+    padding-right: 24px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow 0.15s, transform 0.15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 20px;
+}
+.reveal:focus {
+    outline: none;
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(83, 109, 254, 0.4) 0 2px 4px, rgba(83, 109, 254, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+.reveal:hover {
+    box-shadow: rgba(83, 109, 254, 0.3) 0 4px 8px, rgba(83, 109, 254, 0.2) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+.reveal:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+}
+/* ===============Number input container css End here============ */
+/* ===============Progreess bar part start here================= */
+.progressbar_container{
+    width: 500px;
+    height: 30px;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: all linear .3s;
+}
+.progressbar{
+    width: 0%;
+    height: 100%;
+    background-color: black;
+    border-radius: 8px;
+
+}
+/* ===============Progreess bar part End here================= */
+/* ================player 1 part strt here==================== */
+.player1container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.playername{
+    margin-bottom: 10px;
+}
+.inputfield{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin:  0 auto;
+}
+.inputfieldcommon{
+    margin-top: 10px;
+}
+.player1container .playername{
+    font-size: 30px;
+    font-weight: 700;
+    color: red;
+    
+}
+.player1container{
+    width: 500px;
+    background: transparent;
+    display: none;
+}
+.player1container h2{
+    font-size: 16px;
+    font-family: var(--head);
+    color: black;
+    text-align: center;
+}
+.taskcounterarea{
+    width: 100px;
+    height: 90px;
+    background-color: #333333;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.taskcounterarea h2{
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+    font-family: var(--digits);
+}
+.taskcounterarea span{
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+    font-family: var(--digits);
+}
+/* ===============input field of players======== */
+.inputfield .userinput {
+    --input-focus: #2d8cf0;
+    --font-color: #323232;
+    --font-color-sub: #666;
+    --bg-color: #fff;
+    --main-color: #323232;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--font-color);
+    padding: 5px 10px;
+    outline: none;
+}
+.userinput::placeholder {
+    color: var(--font-color-sub);
+    opacity: 0.8;
+}
+.userinput:focus {
+    border: 2px solid var(--input-focus);
+}
+/* ===============Guess button of players============= */
+/* =================Player 2 part start here============== */
+.player2container{
+    display: none;
+}
+/* ================Player 2 part end here================= */
+/* =================RRROR message=============== */
+.error{
+    margin-top: 10px;
+    font-size: 26px;
+    font-family: var(--text);
+    color: red;
+    font-weight: 700;
+    text-align: center;
+    
+}
+/* =====================Winner message======== */
+.winner{
+    font-size: 76px;
+    font-weight: 700;
+    font-family: var(--digits);
+    text-align: center;
+    display: block;
+}
